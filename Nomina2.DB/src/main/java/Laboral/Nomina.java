@@ -14,7 +14,7 @@ public class Nomina {
 	final static Logger LOGGER = LoggerFactory.getLogger(Nomina.class);
 
 
-	ManejaBD mdb = new ManejaBD();
+	ManejaBD mdb;
 
 
 	/**
