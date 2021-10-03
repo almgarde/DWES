@@ -29,7 +29,7 @@ public class CalculaNominas {
 		ResultSet rs = null;
 		PreparedStatement ps = null;
 		Scanner sc = new Scanner(System.in);
-		ManejaBD mbd = new ManejaBD();
+		
 		List<Empleado> empleados = new ArrayList<>();
 		Nomina nom = new Nomina();
 		String nombre;
@@ -42,6 +42,7 @@ public class CalculaNominas {
 
 		try {
 			conn = DBUtils.getConnection();
+			ManejaBD mbd = new ManejaBD(conn);
 
 			// Estado de la conexión: Descomentar para usar
 
