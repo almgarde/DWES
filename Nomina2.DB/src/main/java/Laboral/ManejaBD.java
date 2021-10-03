@@ -24,6 +24,11 @@ public class ManejaBD {
 	ManejaFicheros mf = new ManejaFicheros();
 	Empleado emp;
 
+	public ManejaBD(Connection conn) {
+		super();
+		this.conn = conn;
+	}
+	
 	/**
 	 * Alta de un nuevo empleado mediante parámetros
 	 * 
