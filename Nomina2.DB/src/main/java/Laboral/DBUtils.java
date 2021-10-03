@@ -11,7 +11,7 @@ public class DBUtils {
 		
     public static Connection getConnection() throws SQLException {
         Connection conn = null;
-		String url = "jdbc:oracle:thin:@192.168.1.135:1521/XE";
+		String url = "jdbc:oracle:thin:@localhost:1521/XE";
 		String user = "dwes";
 		String pass = "dwes";        
 
